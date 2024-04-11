@@ -12,21 +12,6 @@ public struct Money {
     var amount: Int
     var currency: String
     
-    enum MoneyErrors : Error {
-        case invalidCurrency
-    }
-    
-//    init(amount: Int, currency: String) {
-//        let valid = ["USD", "EUR", "GBP", "CAN"]
-//        
-//        guard valid.contains(currency) else {
-//            print("Invalid Currency")
-//        }
-//        
-//        self.amount = amount
-//        self.currency = currency
-//    }
-    
     func convert(_ convert_name: String) -> Money{
         var in_USD = amount
         var newAmount: Int
