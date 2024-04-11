@@ -135,7 +135,7 @@ public class Person {
             return _spouse
         }
         set {
-            if (age < 21) {
+            if (age < 18) {
                 _spouse = nil
             }
             else {
